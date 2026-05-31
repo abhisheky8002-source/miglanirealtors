@@ -1,7 +1,7 @@
 import React from "react";
 import { CheckCircle2, Bookmark, Award, Shield, UserCheck, Eye } from "lucide-react";
 
-const AMIT_PORTRAIT = "/src/assets/images/amit_lather_representative_1780224153939.png";
+const AMIT_PORTRAIT = "https://res.cloudinary.com/dr5obadvt/image/upload/v1780226835/710537170_18001013054948029_780387646443186867_n_gytvbu.jpg";
 
 export default function About() {
   const trustIndicators = [
