@@ -1,0 +1,6 @@
+{
+  "name": "Miglani Realtors",
+  "description": "Premium luxury real estate portfolio and investment advisory by Amit Lather in Gurugram, India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

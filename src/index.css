@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Georgia", serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-gold-50: #fbf8f1;
+  --color-gold-100: #f4ecdb;
+  --color-gold-200: #e9da9d;
+  --color-gold-300: #dcb871;
+  --color-gold-400: #cba250;
+  --color-gold-500: #b8860b; /* Dark Goldenrod */
+  --color-gold-600: #9e7108;
+  --color-gold-700: #7f5707;
+  --color-gold-800: #614006;
+  --color-gold-900: #4a3005;
+  --color-gold-950: #291a02;
+  
+  --color-luxe-charcoal: #121212;
+  --color-luxe-dark: #0a0a0a;
+}
+
+/* Custom smooth-scroll behaviors and focus ring overlays */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #eeeeee;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #b8860b;
+  color: #ffffff;
+}
+
+/* Custom fade scroll reveal classes for motion fallbacks */
+.reveal-on-scroll, .reveal-section {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible, .reveal-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
